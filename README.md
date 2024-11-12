@@ -1,6 +1,6 @@
 <p align="center">
   <p align="center" style="font-size:26px; font-weight: bold; color: var(--main-color, #2196F3); text-transform: capitalize; margin:20px auto;">Elzero</p>
-  <h1 align="center"><a href=""> Elzero | Elzero template three </a></h1>
+  <h1 align="center"><a href="https://mohammed-aljablai.github.io/Elzero.elzero-template-three/"> Elzero | Elzero template three </a></h1>
   <p align="center">
      This is a solution fro <a href="https://elzero.org/practical-html-css/">Elzero HTML, CSS Templates practice</a>. From <a href="https://elzero.org/">Elzero web School</a>.
   <br>
@@ -34,11 +34,11 @@
 
 ### Quick Introduction
 
-This website is a solution for the third website of four website (template) that ![](./meadi/elzero-logo-.png) [Elzero]() give as assiments to test the students skills.
+This website is a solution for the third website of four website (template) that [Elzero](https://elzero.org/) give as assiments to test the students skills.
 **Note:** This website for educational purpose.
 
 ### Challenge Requirements 🏳
-> Simply programme the [website](https://) that have been given to you.
+> Simply programme the [website](https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/) that have been given to you.
 
 ### What I Implemented 🤔
 What about to give us [visit]() and know what I do, I was joking I implemented all the website.
@@ -51,8 +51,8 @@ What about to give us [visit]() and know what I do, I was joking I implemented a
 They are like brother, aren't they 🤔.
 
 ### Links
-Original website: [https://](https)
-Mine: [https://](https)
+Original website: [https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/](https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/)
+Mine: [https://mohammed-aljablai.github.io/Elzero.elzero-template-three/](https://mohammed-aljablai.github.io/Elzero.elzero-template-three/)
 
 ## My process
 ### Built with
