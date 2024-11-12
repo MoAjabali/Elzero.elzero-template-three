@@ -953,7 +953,7 @@ header div.container img{
   position: absolute;
   left: 0px;
   top: 0px;
-  background-color: var(--main-color-alt);
+  background-color: var(--main-color);
   transform-origin: left;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   animation: uncress 1s linear both;
@@ -1060,6 +1060,21 @@ header div.container img{
 
 
 /* latest events */
+.latest-event::before, .price-plan::before{
+  content: url(../meadia/dots.png);
+  position: absolute;
+  bottom: 200px;
+  left: 0px;
+}
+.latest-event::after, .price-plan::after{
+  content: url(../meadia/dots.png);
+  position: absolute;
+  top: 200px;
+  right: 0px;
+}
+.latest-event{
+  position: relative;
+}
 .latest-event .container > div{
   display: flex;
   flex-direction: row;
@@ -1169,6 +1184,7 @@ header div.container img{
 /* price plan */
 .price-plan{
   background-color: var(--section-background);
+  position: relative;
 }
 .price-plan .container > div .box-plan{
   background-color: #fff;
@@ -1363,13 +1379,30 @@ header div.container img{
 
 
 /* stats */
+.stat{
+  background-image: url(../meadia/stats.jpg);
+  background-size: cover;
+  position: relative;
+}
+.stat::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255 255 255 / 95%);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+}
 .stat h3{
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   text-transform: capitalize;
   margin: 0px auto 80px;
   width: fit-content;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 .stat div > div{
   display: grid;
@@ -1386,6 +1419,8 @@ header div.container img{
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 1;
+  background-color: white;
 }
 .stat div > div article:hover::after,
 .stat div > div article:hover::before{
@@ -1410,13 +1445,13 @@ header div.container img{
   transform: scaleY(0);
   transition: transform 1s;
 }
-.stat div > div article span{
+.stat div > div article span, .stat div > div article i{
   font-size: 50px;
   font-weight: bold;
   color: #333;
   transition: color var(--main-transition);
 }
-.stat div > div article:hover span{
+.stat div > div article:hover span, .stat div > div article i{
   color: #000;
 }
 /* .stat div > div article span:first-child::after{
@@ -1451,7 +1486,8 @@ header div.container img{
 }
 .discount div article{
   height: 100vh;
-  background-color: var(--main-color);
+  background-image: url(../meadia/discount-background1.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1460,19 +1496,47 @@ header div.container img{
   color: #fff;
   padding: 0px 20px;
   overflow: hidden;
+  animation: backgroundChange 10s linear infinite;
+  position: relative;
 }
+.discount div article::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: 0.95;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+@keyframes backgroundChange{
+  0%, 100%{
+    background-image: url(../meadia/discount-background1.jpg); 
+  }
+  50%{
+    background-image: url(../meadia/discount-background2.jpg);
+  }
+}
+
 .discount div article p{
   line-height: 1.7;
   font-size: 18px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 .discount h2{
   text-transform: capitalize;
   font-size: 40px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 .discount div article img{
   width: 300px;
+  position: relative;
+  z-index: 1;
 }
 .discount div form{
   height: 100vh;
@@ -1564,13 +1628,20 @@ footer .container > div .logo-f p{
 
 footer .container > div .links p{
   margin: 0px;
-  padding: 15px 0px 15px 20px;
+  padding: 15px 0px 15px 0px;
   text-transform: capitalize;
   width: 100%;
   font-family: sans-serif;
   border-bottom: 1px solid #333;
   color: #b9b9b9;
   transition: var(--main-transition);
+}
+footer .container > div .links p a::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\F101";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--main-color);
 }
 footer .container > div .links p:hover{
   color: #fff;
@@ -1586,13 +1657,24 @@ footer .container > div .links p i{
 footer .container > div .links p:hover i{
   color: var(--main-color);
 }
-footer .container > div .location p{
+footer .container > div .location > div{
   color: #b9b9b9;
   text-transform: capitalize;
   line-height: 1.7;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-footer .container > div div:last-child{
+footer .container > div .location > div i{
+  font-size: 24px;
+  color: var(--main-color);
+}
+footer .container > div .location p{
+  padding: 0px;
+  margin: 0px;
+}
+footer .container > div > div:last-child{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1601,7 +1683,7 @@ footer .container > div div:last-child{
   align-items: center;
   align-content: center;
 }
-footer .container > div div:last-child img{
+footer .container > div > div:last-child img{
   width: 72px;
   border: 2px solid #fff;
 }
