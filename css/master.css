@@ -1413,7 +1413,7 @@ header div.container img{
 }
 .stat div > div article{
   width: 100%;
-  height: 150px;
+  padding: 30px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1421,10 +1421,16 @@ header div.container img{
   position: relative;
   z-index: 1;
   background-color: white;
+  opacity: 0.8;
+  transition: opacity 1s;
+}
+.stat div > div article:hover{
+  opacity: 1;
 }
 .stat div > div article:hover::after,
 .stat div > div article:hover::before{
   transform: scaleY(1);
+
 }
 .stat div > div article::before{
   left: 0px;
@@ -1445,37 +1451,23 @@ header div.container img{
   transform: scaleY(0);
   transition: transform 1s;
 }
+
 .stat div > div article span, .stat div > div article i{
-  font-size: 50px;
   font-weight: bold;
   color: #333;
-  transition: color var(--main-transition);
 }
-.stat div > div article:hover span, .stat div > div article i{
-  color: #000;
+.stat div > div article i{font-size: 32px;}
+.stat div > div article span {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-/* .stat div > div article span:first-child::after{
-  animation: anime150 2s linear both;
-  content: "";
-}
-@keyframes anime150 {
-  from{
-    content: "0";
-  }
-  to{
-    content: "150";
-  }
-} */
 .stat div > div article p{
   margin: 10px 0px 0px;
   padding: 0px;
-  color: var(--main-color-t);
+  color: var(--main-color);
   font-size: 20px;
   font-weight: bold;
-  transition: color var(--main-transition);
-}
-.stat div > div article:hover p{
-  color: var(--main-color);
 }
 
 
@@ -1625,7 +1617,6 @@ footer .container > div .logo-f p{
   line-height: 1.7;
   color: #b9b9b9;
 }
-
 footer .container > div .links p{
   margin: 0px;
   padding: 15px 0px 15px 0px;
@@ -1646,10 +1637,7 @@ footer .container > div .links p a::before{
 footer .container > div .links p:hover{
   color: #fff;
   padding: 15px 0px 15px 30px;
-}
-/* footer .container > div .links p:hover a{
-  transform: translateX(10px);
-} */
+} 
 footer .container > div .links p i{
   margin-right: 10px;
   color: var(--main-color-t);
