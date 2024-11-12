@@ -1,5 +1,5 @@
 <p align="center">
-  <p align="center" style="font-size:26px; font-weight: bold; color: var(--main-color, #2196F3); text-transform: capitalize; margin:20px auto;">Elzero</p>
+  <img src="./meadia/readmeLogo.svg" />
   <h1 align="center"><a href=""> Elzero | Elzero template three </a></h1>
   <p align="center">
      This is a solution fro <a href="https://elzero.org/practical-html-css/">Elzero HTML, CSS Templates practice</a>. From <a href="https://elzero.org/">Elzero web School</a>.
