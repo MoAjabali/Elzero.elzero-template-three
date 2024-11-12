@@ -25,15 +25,9 @@
 - [Author](#author)
 - [Special Thanks](#special-thanks)
 
-
-
-
-
-
 ## Overview
 
 ### Quick Introduction
-
 This website is a solution for the third website of four website (template) that [Elzero](https://elzero.org/) give as assiments to test the students skills.
 **Note:** This website for educational purpose.
 
