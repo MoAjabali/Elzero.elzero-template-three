@@ -1,6 +1,6 @@
 <p align="center">
   <img src="./meadia/readmeLogo.svg" />
-  <h1 align="center"><a href="https://mohammed-aljablai.github.io/Elzero.elzero-template-three/"> Elzero | Elzero template three </a></h1>
+  <h1 align="center"><a href="https://MoAjabali.github.io/Elzero.elzero-template-three/"> Elzero | Elzero template three </a></h1>
   <p align="center">
      This is a solution fro <a href="https://elzero.org/practical-html-css/">Elzero HTML, CSS Templates practice</a>. From <a href="https://elzero.org/">Elzero web School</a>.
   <br>
@@ -46,7 +46,7 @@ They are like brother, aren't they 🤔.
 
 ### Links
 Original website: [https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/](https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/)
-Mine: [https://mohammed-aljablai.github.io/Elzero.elzero-template-three/](https://mohammed-aljablai.github.io/Elzero.elzero-template-three/)
+Mine: [https://MoAjabali.github.io/Elzero.elzero-template-three/](https://MoAjabali.github.io/Elzero.elzero-template-three/)
 
 ## My process
 ### Built with
@@ -59,7 +59,7 @@ Mine: [https://mohammed-aljablai.github.io/Elzero.elzero-template-three/](https:
 - Responsive website from the smallest screen to the biggest
 
 ## Author
-- [@mohammed-Aljablai](https://github.com/mohammed-aljablai)
+- [@mohammed-Aljablai](https://github.com/MoAjabali)
 
 ## Special Thanks
 After Thanks Allah and the person who support me, I would like to thanks the one who educated me and million of people like me Eng.[Osama Mohammed](https://github.com/OsamaElzero).
